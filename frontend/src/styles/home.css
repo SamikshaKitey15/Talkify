@@ -1,0 +1,52 @@
+.FullBox{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/acb65873426833.5c08f5634f7fb.png');
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+.navBar{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 10vh;
+    background-color:rgb(37, 150, 190);
+}
+.navBar > div >h2{
+    font-size: 1.5rem;
+  font-weight: 700;
+  gap: 0.5rem;
+}
+.navBar > div >h2>img{
+    height: 3rem;
+  width: 4rem;
+}
+.navBar > div >p{
+    margin: 0px;
+}
+.meetContainer{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    height: 70vh;
+    gap: 5vw;
+}
+.leftPanel{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top:15vw; */
+    margin-left: 3rem;
+    margin-top: 5rem;
+}
+.rightPanel{
+    display: flex;
+    
+}
+.rightPanel > img{
+    height:80vh;
+    margin-right: 3rem;
+}

@@ -1,0 +1,80 @@
+.LandingPageContainer{
+  height: 100vh;
+  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/acb65873426833.5c08f5634f7fb.png');
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+
+.LandingPageContainer nav{
+  padding-inline: 1.2rem;
+  /* padding-block: 1.6rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.LandingPageContainer nav h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.LandingPageContainer nav img{
+  height: 3rem;
+  width: 3.5rem;
+}
+
+.LandingPageContainer nav .navList{
+  display: flex;
+  gap:  1.6rem;
+  font-weight: 500;
+  font-size: 16px;
+  color:white;
+  cursor: pointer;
+
+}
+
+.LandingPageContainer nav .navList p:hover{
+  font-size: 17px;
+}
+
+.LandingMainContainer{
+  display: flex;
+  justify-content: space-evenly;
+  padding-inline: 3rem;
+   align-items: center;
+}
+.LandingMainImage img{
+  margin-left: 3rem;
+  height: 70vh;
+
+}
+
+.GetStartedButton {
+  color: white;
+  text-decoration: none;
+  background-color: #54504c;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  margin-top: 1.4rem;
+  text-align:center;
+}
+
+.GetStartedButton:hover{
+  font-size: 1.4rem;
+}
+
+
+.bothbuttons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -30px;
+}
+
+.css-9y1wof-MuiPaper-root-MuiCard-root {
+  background-color: black;
+  opacity: 0.6;
+}

@@ -1,0 +1,104 @@
+.lobbycontainer{
+    width: 100vw;
+  height: 100vh;
+  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/acb65873426833.5c08f5634f7fb.png');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+.lobbycontainer h2{
+    margin-top: 0px;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.8rem;
+}
+
+.lobbyUser{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    /* background-color: #f0f0f0; Optional background for visibility */
+    margin: 0;     
+}
+.lobbyUser>video{
+    border-radius: 30px;
+    height: auto;
+
+}
+.lobbyConnect{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; 
+    margin-block: 1.5rem;
+}
+
+.meetVideoContainer{
+    position: relative;
+    height: 100vh;
+    background: rgb(237, 237, 237);
+
+}
+.meetUserVideo{
+    position: absolute;
+    bottom: 28vh;
+    height: auto;
+    /* width: 42rem; */
+    width: 33rem;
+
+    border-radius: 40px;
+    left: 30rem;
+
+}
+
+
+.buttonContainers{
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    bottom: 0;
+    text-align: center;
+    background-color: rgb(41, 40, 40);
+}
+
+.buttonContainers svg{
+    font-size: 3rem;
+}
+
+.conferenceView{
+    overflow-y: scroll;
+    height: 90vh;
+}
+
+.conferenceView > div > video{
+    height: auto;
+    width: 17rem;
+    border-radius: 40px;
+    margin-left: 68rem;
+    margin-top: 13px;
+}
+.chatRoom{
+    position: absolute;
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/acb65873426833.5c08f5634f7fb.png');
+    height: 90vh;
+    width: 23vw;
+    background-color: white;
+    border-radius: 10px;
+    padding-inline: 20px;
+
+}
+.chatContainer{
+    position: relative;
+    height: 67vh;
+    overflow-y: scroll;
+    overflow-x: scroll;
+
+    
+}
+.chattingArea{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 2vh;
+}
