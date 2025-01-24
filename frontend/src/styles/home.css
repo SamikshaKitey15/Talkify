@@ -50,3 +50,45 @@
     height:80vh;
     margin-right: 3rem;
 }
+
+@media(max-width:500px){
+    .hislogout{
+        display: flex;
+        flex-direction: column;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .hislogout button{
+        padding: 0 !important;
+        margin: 0 !important;
+        height: 1.5rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    .rightPanel img{
+        width: 100% !important;
+        height: 50vh;
+        margin: 0 !important;
+    }
+
+    .meetContainer{
+        display: flex !important;
+        flex-direction: column !important;
+        height: 90vh !important;
+    }
+
+    .leftPanel{
+        display: flex !important;
+        flex-direction: column;
+        margin: 1rem 0 0 0  !important;
+    }
+
+    .leftPanel h1{
+        font-size: 1.5rem !important;
+    }
+
+    .card{
+        margin-top: 1rem !important;
+    }
+}

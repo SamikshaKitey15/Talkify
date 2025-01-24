@@ -17,19 +17,18 @@
 
 .lobbyUser{
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;    /* Centers vertically */
-    /* background-color: #f0f0f0; Optional background for visibility */
+    justify-content: center;
+    align-items: center; 
     margin: 0;     
 }
 .lobbyUser>video{
-    border-radius: 30px;
+    border-radius: 28px;
     height: auto;
 
 }
 .lobbyConnect{
     display: flex;
-    justify-content: center; /* Centers horizontally */
+    justify-content: center;
     align-items: center; 
     margin-block: 1.5rem;
 }
@@ -40,65 +39,171 @@
     background: rgb(237, 237, 237);
 
 }
+
 .meetUserVideo{
     position: absolute;
-    bottom: 28vh;
-    height: auto;
-    /* width: 42rem; */
-    width: 33rem;
-
-    border-radius: 40px;
-    left: 30rem;
+    bottom: 11vh;
+    width: 15rem;
+    border-radius: 30px;
+    left: 1rem;
 
 }
 
 
 .buttonContainers{
+    display: flex;
     position: absolute;
     width: 100%;
-    height: 4rem;
+    height: 4.5rem;
     bottom: 0;
     text-align: center;
-    background-color: rgb(41, 40, 40);
+    justify-content: center;
+    background-color: rgb(48, 47, 47);
 }
 
 .buttonContainers svg{
-    font-size: 3rem;
+    font-size: 3.2rem;
 }
 
 .conferenceView{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    height:63vh;
     overflow-y: scroll;
-    height: 90vh;
 }
 
 .conferenceView > div > video{
-    height: auto;
     width: 17rem;
-    border-radius: 40px;
-    margin-left: 68rem;
-    margin-top: 13px;
+    border-radius: 25px;
+    margin-left: 1.2rem;
+    margin-top: 1rem;
 }
+
 .chatRoom{
     position: absolute;
     background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/acb65873426833.5c08f5634f7fb.png');
     height: 90vh;
-    width: 23vw;
+    width: 20vw;
     background-color: white;
     border-radius: 10px;
     padding-inline: 20px;
+    right: 0;
 
 }
+
 .chatContainer{
     position: relative;
     height: 67vh;
     overflow-y: scroll;
     overflow-x: scroll;
-
-    
 }
+
 .chattingArea{
     display: flex;
     justify-content: space-between;
     position: absolute;
     bottom: 2vh;
+}
+
+
+
+@media(max-width:500px){
+
+    .lobbycontainer{
+        height: 100vh !important;
+    }
+
+    .lobbyConnect div{
+        padding: 0 0.7rem 0 0 !important;
+    }
+
+    .lobbycontainer{
+        padding-top: 6rem ;
+    }
+
+    .lobbyUser video{
+        width: 90vw !important;
+        border-radius: 2rem !important;
+    }
+
+    .meetVideoContainer{
+        height: 100vh !important;
+        display: flex !important;
+        flex-direction: column;
+        overflow-y: scroll !important;
+    }
+
+    .chatRoom{
+        position: relative !important;
+        width: 90vw !important;
+        height: 50vh !important;
+    }
+
+    .chatContainer{
+        height: 23.7vh !important;
+        overflow-y: scroll !important;
+    }
+
+    .chatContainer div p{
+        margin: 0 !important;
+    }
+
+    .chatRoom h1{
+        font-size: 1.5rem;
+    }
+
+    .buttonContainers{
+        height: 8vh !important;
+    }
+
+    .chattingArea{
+       height: 3rem !important;
+    }
+
+    .chattingArea div{
+        height: 3rem !important;
+    }
+
+    .buttonContainers svg{
+        font-size: 2.5rem !important;
+    }
+
+    .meetUserVideo{
+        height: auto !important;
+        width: 45vw !important;
+        position: absolute !important;
+    }
+
+    /* .conferenceView{
+        width: 100vw !important;
+        height: 66vh !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+
+    } */
+
+    .conferenceView{
+        width: 100vw !important;
+        height: 66vh !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        overflow-y: scroll !important;
+
+
+    }
+
+    .conferenceView div{
+        width: 35vw !important;
+        height: 20vh !important;
+        margin-right: 3rem !important;
+    }
+
+    .conferenceView video{
+        height:auto !important;
+        width: 24vh !important;
+        position: absolute;
+
+    }
+
 }

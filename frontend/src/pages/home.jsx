@@ -8,9 +8,7 @@ import { AuthContext } from "../contexts/AuthContext";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import { Link } from "react-router-dom";
-import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+
 
 
 function HomeComponent() {
@@ -31,7 +29,7 @@ function HomeComponent() {
             Talkify
           </h2>
         </div>
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div className="hislogout" style={{ display: "flex", alignItems: "center" }}>
           <IconButton
             style={{ color: "white"  }}
             onClick={() => navigate("/history")}
@@ -57,7 +55,7 @@ function HomeComponent() {
             <span style={{ color: "#FF9839" }}>TURNING</span> MOMENTS <br></br>
             INTO MEMORIES WITH FLAWLESS CALLS . . .
           </h1>
-          <Card
+          <Card className="card"
             sx={{
               minWidth: 275,
               opacity: "0.9",
@@ -87,6 +85,7 @@ function HomeComponent() {
             </CardContent>
           </Card>
         </div>
+
         <div className="rightPanel">
           <img
             src=" https://assets-v2.lottiefiles.com/a/3d13279e-117f-11ee-8997-2fd24cabd7b8/BCwZkze0jG.gif"

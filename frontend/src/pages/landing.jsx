@@ -1,13 +1,10 @@
 import React from "react";
 import "../App.css";
 import { Link, useNavigate } from "react-router-dom";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 
 function LandingPage() {
   const routTo = useNavigate();
@@ -60,8 +57,7 @@ function LandingPage() {
             display: "flex",
             flexDirection: "column",
             margin: "3rem 5rem 0 5rem",
-          }}
-        >
+          }}>
           <h1 style={{ fontSize: "2.7rem", color: "black" }}>
             <span style={{ color: "#FF9839", fontSize: "3.5rem" }}>Bridge</span>{" "}
             the gap, <br></br>
@@ -77,35 +73,34 @@ function LandingPage() {
             className="cardBody"
             style={{ marginTop: "1rem", width: "3rem" }}
           >
-            <Card
+            <Card className="Card"
               sx={{
                 minWidth: 400,
-                opacity: "0.7",
+                opacity: "0.8",
                 borderRadius: "20px",
                 backgroundColor: "rgb(242, 239, 239)",
-              }}
-            >
-              <CardContent style={{ color: "black" }}>
+              }}>
+              <CardContent className="cardContent" style={{ color: "black" }}>
                 <Typography sx={{ fontSize: 25, mb: 2 }}>Talkify</Typography>
-                <Typography sx={{ mb: 4 }}>
+                <Typography className="incomeCall" style={{display:"flex", alignItems:"center"}} sx={{ mb: 4 }}>
                   <LocalPhoneIcon />
                   &nbsp;Incoming call . . .
                 </Typography>
                 <div className="bothbuttons">
                   <Link
                     className="GetStartedButton"
-                    style={{ backgroundColor: "red", width: "100%" }}
+                    style={{ backgroundColor: "rgb(224, 34, 34)", width: "100%" }}
                     to={"/auth"}
                   >
-                    Decline
+                    DECLINE
                   </Link>
                   &nbsp;
                   <Link
-                    style={{ width: "100%", backgroundColor:"green" }}
+                    style={{ width: "100%", backgroundColor:"rgb(34, 182, 42)" }}
                     className="GetStartedButton"
                     to={"/auth"}
                   >
-                    Get Started
+                    GET STARTED
                   </Link>
                 </div>
               </CardContent>
@@ -126,8 +121,18 @@ function LandingPage() {
 
 export default LandingPage;
 
-// https://assets-v2.lottiefiles.com/a/3d13279e-117f-11ee-8997-2fd24cabd7b8/BCwZkze0jG.gif
 
-// https://cdn.dribbble.com/users/1894420/screenshots/11700268/online-video-chat.gif
 
-// https://cdn.dribbble.com/users/1003944/screenshots/15741863/media/e7c05a6423abe7506c5067508cb8a64b.gif?resize=400x0
+
+// videos.filter is not a function
+// TypeError: videos.filter is not a function
+//     at http://localhost:3000/static/js/bundle.js:1815:35
+//     at basicStateReducer (http://localhost:3000/static/js/bundle.js:39819:43)
+//     at updateReducerImpl (http://localhost:3000/static/js/bundle.js:39897:50)
+//     at updateReducer (http://localhost:3000/static/js/bundle.js:39848:12)
+//     at Object.useState (http://localhost:3000/static/js/bundle.js:48874:16)
+//     at exports.useState (http://localhost:3000/static/js/bundle.js:54125:32)
+//     at VideoMeet (http://localhost:3000/static/js/bundle.js:1589:74)
+//     at react-stack-bottom-frame (http://localhost:3000/static/js/bundle.js:48333:18)
+//     at renderWithHooks (http://localhost:3000/static/js/bundle.js:39650:20)
+//     at updateFunctionComponent (http://localhost:3000/static/js/bundle.js:40919:17)

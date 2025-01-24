@@ -41,12 +41,11 @@
 .LandingMainContainer{
   display: flex;
   justify-content: space-evenly;
-  padding-inline: 3rem;
+  padding-inline: 4rem;
    align-items: center;
 }
 .LandingMainImage img{
-  margin-left: 3rem;
-  height: 70vh;
+  height: 75vh;
 
 }
 
@@ -57,13 +56,14 @@
   width: fit-content;
   padding: 1rem;
   border-radius: 20px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
   margin-top: 1.4rem;
   text-align:center;
 }
 
 .GetStartedButton:hover{
-  font-size: 1.4rem;
+  font-size: 1.15rem;
 }
 
 
@@ -77,4 +77,86 @@
 .css-9y1wof-MuiPaper-root-MuiCard-root {
   background-color: black;
   opacity: 0.6;
+}
+
+
+@media(max-width:500px){
+  .LandingPageContainer .navList{
+    display:flex;
+    flex-direction: column;
+    gap:0 !important;
+    margin: 0;
+    padding: 0;
+  }
+
+
+.LandingPageContainer nav{
+    height:75px;
+    padding-right:1rem !important;
+  }
+
+  .LandingPageContainer .navList p{
+    margin:0;
+    font-size: 0.9rem;
+
+  }
+
+  .LandingMainContainer{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .LandingMainContainer div{
+    margin: 0 2rem !important;
+  }
+
+  .LandingMainContainer div h1,.LandingMainContainer div h1 span{
+    width: 100%;
+    margin: 1.5rem 0 1.5rem 0 !important;
+    font-size: 1.5rem !important ;
+
+  }
+
+  .LandingMainContainer .cardBody{
+    margin: 0 !important;
+    min-width: 100 !important;
+
+  }
+
+  .LandingMainContainer .cardBody .Card{
+    margin: 0 !important;
+    min-width: 300px !important;
+    height: 160px !important;
+  }
+
+  .LandingMainContainer .cardBody .cardContent{
+    margin: 0 !important;
+   }
+
+   .LandingMainContainer .cardBody .cardContent p{
+    margin: 0 0 12px 0 !important;
+   }
+
+  .LandingMainContainer .bothbuttons {
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0.1rem;
+
+  }
+
+  .LandingMainContainer .bothbuttons .GetStartedButton{
+    font-size: 1rem !important;
+    padding: 0.6rem !important;
+    margin: 0 !important;
+  }
+
+
+  .LandingMainImage img{
+    margin-top: 1.5rem !important;
+    width: 100% !important;
+    height: 35vh !important;
+  }
+ 
+ 
 }
