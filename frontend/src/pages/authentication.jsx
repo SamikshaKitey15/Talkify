@@ -138,7 +138,7 @@ export default function Authentication() {
                 sx={{ mt: 3, mb: 2 }}
                 onClick={handleAuth}
               >
-                {formState===0?"LOGIN":"Register"}
+                {formState===0?"LOGIN":"REGISTER"}
               </Button>
             </Box>
           </Box>

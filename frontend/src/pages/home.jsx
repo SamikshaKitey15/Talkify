@@ -20,6 +20,8 @@ function HomeComponent() {
     await addToUserHistory(meetingCode);
     navigate(`/${meetingCode}`);
   };
+
+  
   return (
     <div className="FullBox">
       <div className="navBar">
